@@ -34,6 +34,7 @@ jobs:
       - name: deploy
         run: |
           cd dist
+          git config user.email "matt.hu1@outlook.com" && git config user.name "matt-hu"
           git init
           git add -A
           git commit -m 'deploy'
