@@ -30,7 +30,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: build
         run: |
-          git switch gh-pages
+          git branch --list
+          git checkout gh-pages
           npm run build
           git add * -f dist/
           git commit -m 'Deploy'
