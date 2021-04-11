@@ -31,7 +31,10 @@ jobs:
       - name: build
         run: |
           git branch --list
+          git branch gh-pages
           git checkout gh-pages
+          git push --set-upstream origin gh-pages
           npm run build
           git add * -f dist/
           git commit -m 'Deploy'
+          git push
