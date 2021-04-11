@@ -22,4 +22,5 @@ jobs:
       with:
         username: 'matt-hu'
         reponame: 'vue-test'
+        gitname: 'gh-actions'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
