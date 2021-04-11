@@ -20,6 +20,6 @@ jobs:
     - id: Build-Vue
       uses: xRealNeon/VuePagesAction@1.0.0
       with:
-        username: 'YourGithubName'
-        reponame: 'YourRepoName'
+        username: 'matt-hu'
+        reponame: 'vue-test'
         token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
