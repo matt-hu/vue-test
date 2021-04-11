@@ -33,6 +33,7 @@ jobs:
           git branch --list
           git branch gh-pages
           git checkout gh-pages
+          git pull
           git merge main
           git push --set-upstream origin gh-pages
           npm run build
