@@ -31,8 +31,8 @@ jobs:
       - name: build
         run: |
           git pull origin main
-          git branch --list
-          git checkout remotes/origin/gh-pages
+          git branch --all
+          git checkout origin/gh-pages
           git merge main
           git push --set-upstream origin gh-pages
           npm run build
